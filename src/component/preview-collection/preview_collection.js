@@ -11,8 +11,8 @@ class PreviewCollection extends Component {
                 </h1>
                 <div className="preview">
                     {
-                        this.props.items.filter((item,idx) => idx < 4).map(({id,...otherItemProps}) => {
-                        return <CollectionItem key={id} {...otherItemProps}/>
+                        this.props.items.filter((item,idx) => idx < 4).map((item) => {
+                        return <CollectionItem key={item.id} item={item}/>
                         })
                     }
 
