@@ -15,7 +15,6 @@ class PreviewCollection extends Component {
                         return <CollectionItem key={item.id} item={item}/>
                         })
                     }
-
                 </div>
                 
             </div>
